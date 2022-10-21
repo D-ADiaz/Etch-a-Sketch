@@ -1,7 +1,7 @@
 
 body{
     display: flex;
-    background-color: rgb(44, 53, 53);
+    background-color: darkslategrey;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -9,29 +9,29 @@ body{
 }
 .container{
     display:flex;
-    flex-direction: row;    
+    flex-direction: row;  
+    border-style: solid;
+    border-color: black;
+    border-radius: 6px;
+    border-width: 10px;
     
 }
 .content{
     display:flex;
+    flex: 1;
     flex-direction: column;
+    flex-grow: 1;
     min-width: 30px;
-    min-height: 500px;
     background-color: lightslategray;
-    border-style: solid;
-    border-width: 3px;
-    border-color: black;
     margin: 0px;
     margin-bottom: -4px;
 }
 .box{
-    display:inline-block;
+    display:flex;
     min-width: 15px;
     min-height: 30px;
     background-color: pink;
-    border-style: solid;
-    border-width: 3px;
-    border-color: plum;
+   
     margin: 0px;
-    margin-bottom: -4px;
+    
 }
