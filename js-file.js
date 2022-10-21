@@ -10,11 +10,15 @@ let boxes = document.querySelectorAll('.box');
 console.log(columns);
 boxes.forEach(box => hoverColor(box));
 
+
+const bttn = document.querySelector('.promptbttn');
+bttn.addEventListener("click", () =>prompt("enter desired grid size 16-100") );
+
 /* Functions */
 
 function createColumns(container)
 {
-    for (let i = 0; i< 16; i++)
+    for (let i = 0; i< 100; i++)
     {
         const div = document.createElement('div');
         div.classList.add('content');
@@ -24,7 +28,7 @@ function createColumns(container)
 
 function createBoxes(column)
 {
-    for (let j = 0; j<16; j++)
+    for (let j = 0; j<100; j++)
     {
         const div = document.createElement('div');
         div.classList.add('box');
