@@ -1,19 +1,14 @@
 const container = document.querySelector('.container');
 
-
-
-const div = document.createElement('div');
-div.classList.add('content');
-
-
-
 /*Creates boxes in a column */
 
 createColumns(container);
 let columns = document.querySelectorAll('.content');
 columns.forEach(column => createBoxes(column));
 
-
+let boxes = document.querySelectorAll('.box');
+console.log(columns);
+boxes.forEach(box => hoverColor(box));
 
 /* Functions */
 
@@ -31,8 +26,15 @@ function createBoxes(column)
 {
     for (let j = 0; j<16; j++)
     {
-    const div = document.createElement('div');
-    div.classList.add('box');
-    column.appendChild(div);
+        const div = document.createElement('div');
+        div.classList.add('box');
+        column.appendChild(div);
+        
     }
 }
+function hoverColor(obj){
+
+obj.addEventListener("mouseenter",() => obj.style.backgroundColor = "purple");
+
+};
+
