@@ -1,7 +1,15 @@
-const Acontainer = document.querySelector('#container');
+const container = document.querySelector('.container');
 
-console.log(Acontainer);
-const content = document.createElement('div');
-content.classList.add('test');
-content.textContent = 'This is the glorious text-content!';
-Acontainer.appendChild(content);
+
+
+const div = document.createElement('div');
+div.classList.add('content');
+
+
+
+for (let i = 0; i< 16; i++)
+{
+    const div = document.createElement('div');
+    div.classList.add('content');
+    container.appendChild(div);
+}
