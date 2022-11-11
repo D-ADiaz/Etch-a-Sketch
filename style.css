@@ -15,26 +15,19 @@ body{
     border-color: black;
     border-radius: 6px;
     border-width: 10px;
-    max-height: 600px;
-    max-width: 600px;
     min-height: 600px;
     min-width: 600px;
-    
-    justify-content: stretch;
 }
 .content{
     display:flex;
     flex-direction: column;
     flex-grow: 1;
-    background-color: lightslategray;
 }
 .box{
-    display:flex;
     flex-grow: 1;
     background-color: white;
     border-width: 1px;
     border-style: solid;
-    border-color: black;
 }
 .promptbttn{
 
